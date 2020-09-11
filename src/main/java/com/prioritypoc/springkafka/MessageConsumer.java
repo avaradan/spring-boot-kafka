@@ -66,7 +66,7 @@ public class MessageConsumer {
      * @param listenerContainerIdleEvent
      */
     @EventListener(condition = "event.listenerId.startsWith('online')")
-    public void listenToOnlineEvent(ListenerContainerIdleEvent listenerContainerIdleEvent){
+    public void listenToOnlineIdleEvent(ListenerContainerIdleEvent listenerContainerIdleEvent){
         registry.getListenerContainer("batch").resume();
     }
 
